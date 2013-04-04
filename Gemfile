@@ -6,13 +6,15 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'bootstrap-sass'
 
-group :dvelopment, :test do
+group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec'
   gem 'spork-rails'
   gem 'guard-spork'
+  gem 'rb-fsevent'
+  gem 'factory_girl_rails'
 end
 
 group :test do

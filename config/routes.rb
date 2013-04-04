@@ -1,4 +1,11 @@
 DbcOverflow::Application.routes.draw do
+  resources :questions
+  match "users/profile", :to => "users#profile"
+  resources :users
+  
+  
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

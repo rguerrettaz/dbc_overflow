@@ -55,6 +55,11 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     ffi (1.6.0)
     formatador (0.2.4)
     guard (1.7.0)
@@ -118,6 +123,7 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.0.4)
+    rb-fsevent (0.9.3)
     rdoc (3.12.2)
       json (~> 1.4)
     rspec (2.13.0)
@@ -180,11 +186,13 @@ DEPENDENCIES
   bootstrap-sass
   capybara
   coffee-rails (~> 3.2.1)
+  factory_girl_rails
   guard
   guard-rspec
   guard-spork
   jquery-rails
   rails (= 3.2.13)
+  rb-fsevent
   rspec-rails
   sass-rails (~> 3.2.3)
   shoulda-matchers
