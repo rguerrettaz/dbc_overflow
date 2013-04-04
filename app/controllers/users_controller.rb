@@ -9,7 +9,8 @@ class UsersController < ApplicationController
     # p params
     # puts '*' *30
     session[:user_id] = @user.id
-    redirect_to users_profile_path
+    flash[:notice] = "Success"
+    redirect_to users_profile_path 
   end
 
   def profile

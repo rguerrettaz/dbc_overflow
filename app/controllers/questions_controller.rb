@@ -1,5 +1,7 @@
 class QuestionsController < ApplicationController
   def new
+    p session[:user_id]
+    p "#" * 30
     @question = Question.new
   end
 

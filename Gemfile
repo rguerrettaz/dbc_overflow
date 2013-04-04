@@ -15,11 +15,13 @@ group :development, :test do
   gem 'guard-spork'
   gem 'rb-fsevent'
   gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :test do
   gem 'shoulda-matchers'
-  gem 'capybara'
+  
 end
 
 

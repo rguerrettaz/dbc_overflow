@@ -1,4 +1,5 @@
 DbcOverflow::Application.routes.draw do
+  root to: 'static_pages#home'
   resources :questions
   match "users/profile", :to => "users#profile"
   resources :users
