@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :questions
+  has_many :questions, :votes
 
   EMAIL_REGEX = /^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/
   before_create :generate_username
