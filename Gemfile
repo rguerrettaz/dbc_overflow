@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,7 +22,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
-  
+
 end
 
 
@@ -37,7 +38,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'annotate', ">=2.5.0"
 gem 'jquery-rails'
+gem 'bcrypt-ruby'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

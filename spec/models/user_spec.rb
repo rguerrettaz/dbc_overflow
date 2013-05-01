@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe User do
-  subject { FactoryGirl.create(:user) }
+  subject { create(:user) }
   it { should validate_uniqueness_of(:username) }
   it { should validate_uniqueness_of(:email) }
   it { should_not validate_presence_of(:username) }
